@@ -1,9 +1,0 @@
-[Plymouth Theme]
-Name=Core
-Description=Core Linux logo with spinning colored stripes
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/core
-ScriptFile=/usr/share/plymouth/themes/core/core.script
-UseFirmwareBackground=false
