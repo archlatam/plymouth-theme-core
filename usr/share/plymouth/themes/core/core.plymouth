@@ -4,8 +4,8 @@ Description=Core Linux splash screen.
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/core-linux
-ScriptFile=/usr/share/plymouth/themes/core-linux/core-linux.script
+ImageDir=/usr/share/plymouth/themes/core
+ScriptFile=/usr/share/plymouth/themes/core/core.script
 ConsoleLogBackgroundColor=0x1e1e2e
 MonospaceFont=Cantarell 11
 Font=Cantarell 11
