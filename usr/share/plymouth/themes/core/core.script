@@ -1,13 +1,13 @@
-# Omarchy Plymouth Theme Script
+# core Linux Plymouth Theme Script
 
 Window.SetBackgroundTopColor(0.118, 0.118, 0.180);
 Window.SetBackgroundBottomColor(0.118, 0.118, 0.180);
 
-# logo.image = Image("logo.png");
-# logo.sprite = Sprite(logo.image);
-# logo.sprite.SetX (Window.GetWidth()  / 2 - logo.image.GetWidth()  / 2);
-# logo.sprite.SetY (Window.GetHeight() / 2 - logo.image.GetHeight() / 2);
-# logo.sprite.SetOpacity (1);
+logo.image = Image("logo.png");
+logo.sprite = Sprite(logo.image);
+logo.sprite.SetX (Window.GetWidth()  / 2 - logo.image.GetWidth()  / 2);
+logo.sprite.SetY (Window.GetHeight() / 2 - logo.image.GetHeight() / 2);
+logo.sprite.SetOpacity (1);
 
 # Use these to adjust the progress bar timing
 global.fake_progress_limit = 0.7;  # Target percentage for fake progress (0.0 to 1.0)
@@ -120,7 +120,7 @@ bullet.image = Image("bullet.png");
 
 entry.sprite = Sprite(entry.image);
 entry.x = Window.GetWidth()/2 - entry.image.GetWidth() / 2;
-# entry.y = logo.sprite.GetY() + logo.image.GetHeight() + 40;
+entry.y = logo.sprite.GetY() + logo.image.GetHeight() + 40;
 entry.y = Window.GetHeight() / 2 + 100;
 entry.sprite.SetPosition(entry.x, entry.y, 10001);
 entry.sprite.SetOpacity(0);
@@ -233,7 +233,7 @@ Plymouth.SetBootProgressFunction(progress_callback);
 
 fun quit_callback ()
 {
-  # logo.sprite.SetOpacity (1);
+  logo.sprite.SetOpacity (1);
 }
 
 Plymouth.SetQuitFunction(quit_callback);
